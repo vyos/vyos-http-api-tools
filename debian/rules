@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export DH_VIRTUALENV_INSTALL_ROOT=/usr/share
+
+%:
+	dh $@ --with python-virtualenv
+
+override_dh_virtualenv:
+	dh_virtualenv \
+	--python /usr/bin/python3.7 \
+	--use-system-packages \
+	--builtin-venv \
+	--setuptools \
+	--upgrade-pip \
+	--extra-pip-arg "--ignore-installed" \
+	--extra-pip-arg "--no-cache-dir"
+

@@ -1,0 +1,5 @@
+vyos-http-api-tools (0.1.0-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Fri, 26 Mar 2021 16:19:34 +0000
