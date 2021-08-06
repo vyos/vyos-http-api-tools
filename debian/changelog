@@ -1,3 +1,9 @@
+vyos-http-api-tools (0.2.0-1) unstable; urgency=medium
+
+  * Add GraphQL support
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Fri, 06 Aug 2021 15:22:28 -0500
+
 vyos-http-api-tools (0.1.0-1) unstable; urgency=medium
 
   * Initial release.
