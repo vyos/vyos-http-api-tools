@@ -2,3 +2,4 @@ fastapi
 python-multipart
 uvicorn
 wsproto
+ariadne

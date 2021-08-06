@@ -4,16 +4,18 @@
 #
 #    pip-compile requirements.in
 #
+ariadne==0.13.0           # via -r requirements.in
 asgiref==3.3.4            # via uvicorn
 click==8.0.1              # via uvicorn
 fastapi==0.65.2           # via -r requirements.in
+graphql-core==3.1.5       # via ariadne
 h11==0.12.0               # via uvicorn, wsproto
 importlib-metadata==4.5.0  # via click
 pydantic==1.8.2           # via fastapi
 python-multipart==0.0.5   # via -r requirements.in
 six==1.16.0               # via python-multipart
-starlette==0.14.2         # via fastapi
-typing-extensions==3.10.0.0  # via asgiref, importlib-metadata, pydantic, uvicorn
+starlette==0.14.2         # via ariadne, fastapi
+typing-extensions==3.10.0.0  # via ariadne, asgiref, importlib-metadata, pydantic, uvicorn
 uvicorn==0.14.0           # via -r requirements.in
 wsproto==1.0.0            # via -r requirements.in
 zipp==3.4.1               # via importlib-metadata
