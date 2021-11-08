@@ -14,10 +14,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @NonCPS
 
-// Using a version specifier library, use 'current' branch. The underscore (_)
+// Using a version specifier library, use 'equuleus' branch. The underscore (_)
 // is not a typo! You need this underscore if the line immediately after the
 // @Library annotation is not an import statement!
 @Library('vyos-build@equuleus')_
 
 // Start package build using library function from https://github.com/vyos/vyos-build
-buildPackage(null, null, null, true)
+buildPackage()
