@@ -1,3 +1,10 @@
+vyos-http-api-tools (0.2.0-1.1) unstable; urgency=medium
+
+  * Add sgqlc
+  * Add support for ariadne file upload
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Sat, 04 Dec 2021 19:15:18 +0000
+
 vyos-http-api-tools (0.2.0-1) unstable; urgency=medium
 
   * Add GraphQL support
