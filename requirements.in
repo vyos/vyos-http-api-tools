@@ -2,6 +2,6 @@ fastapi
 python-multipart
 uvicorn[standard]
 wsproto
-ariadne
+ariadne[asgi-file-uploads]
 makefun
 sgqlc
