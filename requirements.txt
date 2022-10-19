@@ -38,6 +38,8 @@ python-multipart==0.0.5
     # via
     #   -r requirements.in
     #   ariadne
+python-pam==2.0.2
+    # via -r requirements.in
 pyyaml==6.0
     # via uvicorn
 sgqlc==16.0

@@ -6,3 +6,4 @@ ariadne[asgi-file-uploads]
 makefun
 sgqlc
 pyjwt
+python-pam

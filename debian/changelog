@@ -1,3 +1,9 @@
+vyos-http-api-tools (2.2) unstable; urgency=medium
+
+  * Add package python-pam
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Wed, 19 Oct 2022 17:45:45 +0000
+
 vyos-http-api-tools (2.1) unstable; urgency=medium
 
   * Add pyjwt
