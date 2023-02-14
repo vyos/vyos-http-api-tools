@@ -8,11 +8,11 @@ anyio==3.6.2
     # via
     #   starlette
     #   watchfiles
-ariadne[asgi-file-uploads]==0.17.1
+ariadne==0.17.1
     # via -r requirements.in
 click==8.1.3
     # via uvicorn
-fastapi==0.91.0
+fastapi==0.89.1
     # via -r requirements.in
 graphql-core==3.2.3
     # via
@@ -35,9 +35,7 @@ pyjwt==2.6.0
 python-dotenv==0.21.1
     # via uvicorn
 python-multipart==0.0.5
-    # via
-    #   -r requirements.in
-    #   ariadne
+    # via -r requirements.in
 python-pam==2.0.2
     # via -r requirements.in
 pyyaml==6.0
@@ -48,7 +46,7 @@ six==1.16.0
     # via python-multipart
 sniffio==1.3.0
     # via anyio
-starlette==0.24.0
+starlette==0.22.0
     # via
     #   ariadne
     #   fastapi
