@@ -6,6 +6,9 @@ export DH_VIRTUALENV_INSTALL_ROOT=/usr/share
 	dh $@ --with python-virtualenv
 
 override_dh_virtualenv:
+	# Temporary Debian 12 "Bookworm" fix
+	sudo sed -i 's/getargspec/getfullargspec/' /usr/bin/dh_virtualenv
+
 	dh_virtualenv \
 	--python /usr/bin/python3 \
 	--use-system-packages \
