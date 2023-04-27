@@ -1,7 +1,7 @@
-fastapi
+fastapi==0.92.0
 python-multipart
 uvicorn[standard]
 wsproto
-ariadne[asgi-file-uploads]
+ariadne
 makefun
 sgqlc
