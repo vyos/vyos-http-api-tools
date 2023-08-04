@@ -19,9 +19,12 @@ Main packages, not including dependencies; cf. requirements.txt:
 
 FastAPI
 https://github.com/tiangolo/fastapi
+
 Uvicorn
 https://github.com/encode/uvicorn
+
 Ariadne
 https://github.com/mirumee/ariadne
+
 makefun
 https://github.com/smarie/python-makefun
