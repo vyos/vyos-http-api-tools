@@ -11,7 +11,7 @@ anyio==3.7.1
     #   fastapi
     #   starlette
     #   watchfiles
-ariadne==0.22
+ariadne==0.23.0
     # via -r requirements.in
 click==8.1.7
     # via uvicorn
@@ -29,7 +29,7 @@ h11==0.14.0
     #   wsproto
 httptools==0.6.0
     # via uvicorn
-idna==3.6
+idna==3.7
     # via anyio
 importlib-metadata==6.7.0
     # via
@@ -43,13 +43,13 @@ pydantic-core==2.14.6
     # via pydantic
 python-dotenv==0.21.1
     # via uvicorn
-python-multipart==0.0.7
+python-multipart==0.0.8
     # via -r requirements.in
 pyyaml==6.0.1
     # via uvicorn
 sgqlc==16.3
     # via -r requirements.in
-sniffio==1.3.0
+sniffio==1.3.1
     # via anyio
 starlette==0.27.0
     # via
