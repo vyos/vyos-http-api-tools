@@ -36,7 +36,7 @@ pydantic-core==2.27.1
     # via pydantic
 pyjwt==2.12.0
     # via -r requirements.in
-python-dotenv==1.0.1
+python-dotenv==1.2.2
     # via uvicorn
 python-multipart==0.0.26
     # via -r requirements.in
