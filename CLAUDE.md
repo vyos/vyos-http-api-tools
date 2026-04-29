@@ -1,4 +1,4 @@
-# CLAUDE.md
+# vyos-http-api-tools — AI coding context
 
 ## Project purpose
 Debian packaging wrapper that bundles the Python runtime dependencies of the VyOS HTTP API (FastAPI, uvicorn, ariadne, etc.) as a single `.deb` installed on VyOS images. **Contains no application logic** — the actual HTTP API implementation lives in `vyos-1x/src/services/`. Maintained as a separate package so that not-yet-Debian-packaged Python libraries can ship and update independently of VyOS releases.
@@ -12,7 +12,7 @@ Debian packaging wrapper that bundles the Python runtime dependencies of the VyO
 ```
 dpkg-buildpackage -uc -us -tc -b
 # Update pinned versions from requirements.in:
-pip-compile requirements.in > requirements.txt
+pip-compile requirements.in  # writes requirements.txt by default
 ```
 No application-level test runner — the package is exercised at runtime by `vyos-1x`'s API services.
 
