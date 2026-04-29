@@ -42,7 +42,3 @@ Mirror twin: `VyOS-Networks/vyos-http-api-tools`. Mirror status: gen-1 pipeline 
 - Any new library required by the HTTP API: append to `requirements.in`, regenerate `requirements.txt`, validate that the version installs cleanly inside `dh-virtualenv` (Python 3 + Debian bookworm).
 - After merge, `trigger-rebuild-repo-package.yml` fires REST `workflow_dispatch` into `$REMOTE_OWNER/vyos-build-packages` (REMOTE_OWNER = VyOS-Networks) to rebuild the `.deb` as `vyosbot`.
 - Watch FastAPI/uvicorn version pins for compat with the VyOS Python release (currently 3.11/3.12 on bookworm).
-
----
-
-This file is mirrored on Confluence: [`vyos/vyos-http-api-tools`](https://internal.confluence.vyos.com/wiki/spaces/VYOS/pages/818282936). The Confluence page also carries the per-repo audit data (settings, workflows, secret counts, hygiene) that complements this CLAUDE.md. Edit either side; resync via the documentation pipeline.
