@@ -26,7 +26,7 @@ No application-level test runner — the package is exercised at runtime by `vyo
 
 ## Cross-repo context
 - The actual HTTP API server code lives in `vyos/vyos-1x` (`python/vyos/`, `src/services/`, supporting Jinja2 templates and op-mode definitions). This repo only stages the runtime libs.
-- Built into ISOs by `vyos/vyos-build`; listed in `VyOS-Networks/vyos-build-packages/repos.toml` as one of the 14 canonical source repos.
+- Built into ISOs by `vyos/vyos-build`; listed in an internal repository as one of the 14 canonical source repos.
 - Bundled libraries (per `README.md`): FastAPI, uvicorn, ariadne, makefun, sgqlc, pyjwt, python-pam, python-multipart, wsproto.
 
 ## Conventions
@@ -34,11 +34,8 @@ No application-level test runner — the package is exercised at runtime by `vyo
 - Workflows: `pr-mirror-repo-sync.yml`, `trigger-rebuild-repo-package.yml`, `codeql.yml`, `cla-check.yml` (all `vyos/.github@current` reusables).
 - Bumping `requirements.in` → regenerate `requirements.txt` via `pip-compile` (`pip-tools`) in the same PR. Pin full graph for reproducible builds.
 
-## Mirror relationship
-Mirror twin: `VyOS-Networks/vyos-http-api-tools`. Mirror status: gen-1 pipeline workflow present (`pr-mirror-repo-sync.yml`); treat the `vyos/*` side as canonical.
-
 ## Notes for future contributors
 - Do **not** add application logic here. Anything API-related goes in `vyos-1x`.
 - Any new library required by the HTTP API: append to `requirements.in`, regenerate `requirements.txt`, validate that the version installs cleanly inside `dh-virtualenv` (Python 3 + Debian bookworm).
-- After merge, `trigger-rebuild-repo-package.yml` fires REST `workflow_dispatch` into `$REMOTE_OWNER/vyos-build-packages` (REMOTE_OWNER = VyOS-Networks) to rebuild the `.deb` as `vyosbot`.
+- After merge, `trigger-rebuild-repo-package.yml` fires REST `workflow_dispatch` into `$REMOTE_OWNER/vyos-build-packages` (REMOTE_OWNER = the private side) to rebuild the `.deb` as `vyosbot`.
 - Watch FastAPI/uvicorn version pins for compat with the VyOS Python release (currently 3.11/3.12 on bookworm).
