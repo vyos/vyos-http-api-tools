@@ -31,7 +31,7 @@ No application-level test runner — the package is exercised at runtime by `vyo
 
 ## Conventions
 - Commit/PR title: `component: T12345: description` (Phorge task ID at https://vyos.dev). Enforced by `check-pr-message.yml` reusable.
-- Workflows: `pr-mirror-repo-sync.yml`, `trigger-rebuild-repo-package.yml`, `codeql.yml`, `cla-check.yml` (all `vyos/.github@current` reusables).
+- Workflows: `pr-mirror-repo-sync.yml`, `trigger-rebuild-repo-package.yml`, `codeql.yml`, `cla-check.yml` (all `vyos/.github@production` reusables).
 - Bumping `requirements.in` → regenerate `requirements.txt` via `pip-compile` (`pip-tools`) in the same PR. Pin full graph for reproducible builds.
 
 ## Notes for future contributors
