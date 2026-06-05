@@ -1,3 +1,11 @@
+vyos-http-api-tools (2.5) unstable; urgency=medium
+
+  * Update version of idna to 3.15
+  * Update version of python-multipart to 0.0.27
+  * Update version of python-dotenv to 1.2.2
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Tue, 19 May 2026 19:20:56 -0500
+
 vyos-http-api-tools (2.4) unstable; urgency=medium
 
   * Update version of python-multipart to 0.0.26
