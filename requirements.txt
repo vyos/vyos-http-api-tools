@@ -26,7 +26,7 @@ h11==0.16.0
     #   wsproto
 httptools==0.6.4
     # via uvicorn
-idna==3.15
+idna==3.10
     # via anyio
 makefun==1.15.6
     # via -r requirements.in
@@ -36,9 +36,9 @@ pydantic-core==2.27.1
     # via pydantic
 pyjwt==2.12.0
     # via -r requirements.in
-python-dotenv==1.2.2
+python-dotenv==1.0.1
     # via uvicorn
-python-multipart==0.0.27
+python-multipart==0.0.26
     # via -r requirements.in
 python-pam==2.0.2
     # via -r requirements.in
