@@ -34,7 +34,7 @@ pydantic==2.10.2
     # via fastapi
 pydantic-core==2.27.1
     # via pydantic
-pyjwt==2.12.0
+pyjwt==2.13.0
     # via -r requirements.in
 python-dotenv==1.2.2
     # via uvicorn
