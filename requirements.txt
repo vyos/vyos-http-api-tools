@@ -34,7 +34,7 @@ pydantic==2.10.2
     # via fastapi
 pydantic-core==2.27.1
     # via pydantic
-pyjwt==2.13.0
+pyjwt==2.15.0
     # via -r requirements.in
 python-dotenv==1.2.2
     # via uvicorn
@@ -52,6 +52,7 @@ starlette==0.41.3
     #   fastapi
 typing-extensions==4.12.2
     # via
+    #   anyio
     #   ariadne
     #   fastapi
     #   pydantic
