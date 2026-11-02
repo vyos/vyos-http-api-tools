@@ -1,3 +1,9 @@
+vyos-http-api-tools (2.9) unstable; urgency=medium
+
+  * Update version of graphql-core to 3.2.12
+
+ -- VyOS maintainers and contributors <maintainers@vyos.io>  Mon, 02 Nov 2026 08:08:38 -0600
+
 vyos-http-api-tools (2.8) unstable; urgency=medium
 
   * Update version of pyjwt to 2.15.0
