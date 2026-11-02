@@ -16,7 +16,7 @@ click==8.1.7
     # via uvicorn
 fastapi==0.115.5
     # via -r requirements.in
-graphql-core==3.2.5
+graphql-core==3.2.12
     # via
     #   ariadne
     #   sgqlc
