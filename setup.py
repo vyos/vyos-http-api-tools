@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     author="VyOS maintainers and contributors",
     author_email="maintainers@vyos.net",
-    python_requires=">=3.7",
+    python_requires=">=3.11",
     license="BSD",
     url="http://www.vyos.io",
     packages=["vyos-http-api-tools"],
@@ -14,7 +14,7 @@ setup(
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: BSD License", 
+        "License :: OSI Approved :: BSD License",
         "Topic :: Internet :: WWW/HTTP",
     ],
 )
