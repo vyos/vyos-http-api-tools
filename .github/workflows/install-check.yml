@@ -1,0 +1,16 @@
+name: Install check
+on:
+  pull_request:
+    paths: [requirements.in, requirements.txt]
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements.txt && pip check
