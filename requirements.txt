@@ -12,7 +12,7 @@ anyio==4.16.0
     # via
     #   starlette
     #   watchfiles
-ariadne==1.1.1
+ariadne==0.28.0
     # via -r requirements.in
 click==8.5.0
     # via uvicorn
@@ -50,7 +50,7 @@ pyyaml==6.0.3
     # via uvicorn
 sgqlc==18
     # via -r requirements.in
-starlette==1.10.0
+starlette==0.52.1
     # via
     #   ariadne
     #   fastapi
