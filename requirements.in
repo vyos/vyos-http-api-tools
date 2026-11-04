@@ -2,7 +2,7 @@ fastapi
 python-multipart
 uvicorn[standard]
 wsproto
-ariadne
+ariadne<0.29  # 0.29 removed snake_case_fallback_resolvers, used by vyos-1x
 makefun
 sgqlc
 pyjwt
