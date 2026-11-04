@@ -1,0 +1,14 @@
+name: Debian build
+on:
+  pull_request:
+    paths: [requirements.in, requirements.txt, debian/**, setup.py]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: debian:bookworm
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          apt-get update
+          apt-get install -y --no-install-recommends build-essential debhelper dh-virtualenv sudo python3 python3-setuptools python3-pip python3-venv
+      - run: dpkg-buildpackage -uc -us -tc -b
