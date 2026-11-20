@@ -1,14 +1,14 @@
 Source: vyos-http-api-tools
-Section: contrib/net
-Priority: extra
+Section: net
+Priority: optional
 Maintainer: VyOS Package Maintainers <maintainers@vyos.net>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper-compat (= 13),
   python3,
   python3-setuptools,
   dh-virtualenv (>= 1.0),
   python3-pip,
   python3-venv
-Standards-Version: 3.9.6
+Standards-Version: 4.6.2
 
 Package: vyos-http-api-tools
 Architecture: any
@@ -16,7 +16,6 @@ Pre-Depends: dpkg (>= 1.16.1),
   python3,
   ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Description: api tools for VyOS
-  api tools for VyOS
-
-
+Description: API tools for VyOS
+  Bundles the Python runtime dependencies of the VyOS HTTP API
+  (FastAPI, uvicorn, ariadne, ...) in a virtualenv.
