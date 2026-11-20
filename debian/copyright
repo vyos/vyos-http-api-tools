@@ -1,0 +1,53 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: vyos-http-api-tools
+Upstream-Contact: VyOS Package Maintainers <maintainers@vyos.net>
+Source: https://github.com/vyos/vyos-http-api-tools
+Comment:
+ The binary package is a Python virtual environment built with dh-virtualenv
+ that bundles the third-party Python packages pinned in requirements.txt.
+ Their versions change with that file. Each bundled package installs its own
+ license and copyright notice in its *.dist-info/ directory under
+ /usr/share/vyos-http-api-tools/lib/python3*/site-packages/.
+ .
+ All of them are under permissive licenses:
+ .
+  - MIT: annotated-doc, annotated-types, anyio, fastapi, graphql-core, h11,
+    httptools, pydantic, pydantic-core, pyjwt, python-pam, pyyaml,
+    typing-inspection, watchfiles, wsproto
+  - BSD-3-Clause: ariadne, click, idna, makefun, python-dotenv, starlette,
+    uvicorn, websockets
+  - Apache-2.0: opentelemetry-api, python-multipart
+  - MIT or Apache-2.0: uvloop
+  - ISC: sgqlc
+  - PSF-2.0: typing-extensions
+
+Files: *
+Copyright: 2021-2026 VyOS maintainers and contributors <maintainers@vyos.net>
+License: BSD-3-Clause
+
+License: BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived from this
+    software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
