@@ -10,15 +10,16 @@ annotated-types==0.8.0
     # via pydantic
 anyio==4.16.0
     # via
+    #   fastapi
     #   starlette
     #   watchfiles
-ariadne==0.28.0
+ariadne==1.1.1
     # via -r requirements.in
 click==8.5.0
     # via uvicorn
-fastapi==0.162.0
+fastapi==0.165.0
     # via -r requirements.in
-graphql-core==3.2.13
+graphql-core==3.2.14
     # via
     #   ariadne
     #   sgqlc
@@ -50,8 +51,9 @@ pyyaml==6.0.3
     # via uvicorn
 sgqlc==18
     # via -r requirements.in
-starlette==0.52.1
+starlette==1.10.0
     # via
+    #   -r requirements.in
     #   ariadne
     #   fastapi
 typing-extensions==4.16.0
