@@ -13,7 +13,9 @@ To build:
 To update dependency versions from un-versioned packages names:
 (Install pip-compile from 'pip-tools')
 
-    pip-compile requirements.in > requirements.txt
+    pip-compile requirements.in
+
+Supported: Python 3.11/3.12 on Debian bookworm.
 
 Main packages, not including dependencies; cf. requirements.txt:
 
@@ -28,3 +30,6 @@ https://github.com/mirumee/ariadne
 
 makefun
 https://github.com/smarie/python-makefun
+
+python-multipart, pyjwt, python-pam, sgqlc, wsproto
+(see requirements.in)
